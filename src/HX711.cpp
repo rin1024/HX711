@@ -239,7 +239,7 @@ long HX711::read_average(byte times) {
 	return sum / times;
 }
 
-double HX711::get_value(byte times) {
+float HX711::get_value(byte times) {
 	return read_average(times) - OFFSET;
 }
 
@@ -248,7 +248,7 @@ float HX711::get_units(byte times) {
 }
 
 void HX711::tare(byte times) {
-	double sum = read_average(times);
+	float sum = read_average(times);
 	set_offset(sum);
 }
 
