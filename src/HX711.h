@@ -23,7 +23,7 @@ class HX711
 		byte DOUT;		// Serial Data Output Pin
 		byte GAIN;		// amplification factor
 		long OFFSET = 0;	// used for tare weight
-		float SCALE = 1;	// used to return weight in grams, kg, ounces, whatever
+		float SCALE = 1.f;	// used to return weight in grams, kg, ounces, whatever
 
 	public:
 
